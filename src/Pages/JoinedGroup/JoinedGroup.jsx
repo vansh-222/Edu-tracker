@@ -7,6 +7,8 @@ import Members from "./Components/Members";
 import Tasks from "./Components/Tasks";
 import Resources from "./Components/Resources";
 import SideButtons from "./Components/SideButtons";
+import './Components/JoinedGroup.css';
+
 
 export default function JoinedGroup() {
   return (

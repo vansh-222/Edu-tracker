@@ -1,6 +1,5 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import JoinedGroup from "./Pages/JoinedGroup/JoinedGroup";
-import "./styles.css";
 function App() {
   return (
     <Routes>
