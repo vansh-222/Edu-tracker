@@ -1,0 +1,93 @@
+
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  padding: 30px 20px;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.1);
+  border-radius: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.sidebar-title .edu {
+  color: #a748e2; 
+}
+
+.sidebar-title .track {
+  color: #000;
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar-item {
+  padding: 10px 15px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 2px solid #52edb1 ;
+  color: #333;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.sidebar-item:hover {
+  background-color: #e8f5e9;
+  color:black;
+}
+
+.sidebar-item.active {
+  background-color:#52edb1 ;
+  color: white;
+}
+.sidebar-bottom {
+  margin-top: auto;         
+  text-align: center;
+  padding: 15px;
+}
+
+.illustration-section {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.sidebar-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;  
+}
+
+
+.illustration-section p {
+  font-size: 14px;
+  color: #333;
+  margin: 30px  auto 10px auto;
+}
+
+.upgrade-btn {
+  background-color: #52edb1 ;
+  color: white;
+  padding: 10px 70px;
+  border: none;
+ 
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.upgrade-btn:hover {
+  background-color:#a1efd1 ;
+}

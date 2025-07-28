@@ -1,0 +1,83 @@
+.top-navbar {
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+.top-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.navbar-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+.active-groups {
+  font-size: 14px;
+  color: white;
+  opacity: 0.9;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 20px;
+  background: white;
+  color: black;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 28px;
+  background: white;
+  color: gray;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.bottom-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-top: 8px;
+}
+
+.create-btn {
+  background-color: orange;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dropdown {
+  padding: 8px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
