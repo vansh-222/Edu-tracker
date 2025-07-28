@@ -320,9 +320,42 @@ padding-left: 20px;
   font-size: 40px;
 }
 
+.progress-popup-inner {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  padding: 0px 30px;
+  text-align: center;
+  z-index: 10;
+  width: 300px;
+  height: auto;
+}
+
+.progress-popup-inner h4 {
+font-size: xx-large;
+}
+
+.special {
+  font-size: 30px;
+  color: #10b981;
+  font-weight: bold;
+  padding-block: 20px;
+}
+
+.progress-popup-inner p {
+  margin: 5px 0;
+  font-size: 25px;
+}
+
+.progress-donut {
+  position: relative;
+}
+
+
 
 /* subject section */
-
 .subjects-section {
   padding: 2rem;
   box-sizing: border-box;
@@ -357,7 +390,7 @@ padding-left: 20px;
   gap: 10px;
   background: #ffffff;
   padding: 10px 15px;
-  border-radius: 12px; /* pill shape */
+  border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   max-width: 450px;
   margin-top: 20px;
@@ -374,7 +407,7 @@ padding-left: 20px;
 }
 
 .subject-save-button {
-  background: #10b981; 
+  background: #10b981;
   color: #ffffff;
   border: none;
   padding: 10px 20px;
@@ -388,8 +421,6 @@ padding-left: 20px;
 .subject-save-button:hover {
   background: #059669;
 }
-
-
 
 .subjects-container {
   display: grid;
@@ -441,12 +472,12 @@ padding-left: 20px;
 }
 
 .subject-card {
+  position: relative;
   padding: 1rem;
   border-radius: 20px;
   color: #202040;
   font-size: 30px;
   font-weight: 500;
-  position: relative;
 }
 
 .subject-number {
@@ -480,6 +511,25 @@ padding-left: 20px;
 }
 .yellow {
   background-color: #f9f871;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  transform: scale(1.2);
+}
+
+.absolute-delete {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 22px;
 }
 
 
