@@ -1,0 +1,39 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+background: linear-gradient(to right, #00C181 , #00AD6F );
+
+  padding: 20px;
+}
+
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+ 
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.right-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.main-content {
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+}
