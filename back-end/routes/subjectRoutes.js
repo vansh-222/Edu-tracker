@@ -14,6 +14,7 @@ router.post('/', async (req, res) => {
   }
 });
 
+// POST: Delete new subject
 router.delete("/:id", async (req, res) => {
   try {
     const deleted = await Subject.findByIdAndDelete(req.params.id);
@@ -38,5 +39,20 @@ router.get('/', async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 });
+
+// POST /api/subjects/:id/topics
+router.post('/:id/topics', async (req, res) => {
+  const { title } = req.body;
+
+  try {
+    const subject = await Subject.findById(req.params.id);
+    subject.topics.push({ title });
+    await subject.save();
+    res.json(subject);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to add topic' });
+  }
+});
+
 
 export default router;

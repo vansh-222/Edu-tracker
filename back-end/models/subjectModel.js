@@ -9,6 +9,18 @@ const subjectSchema = new mongoose.Schema({
     type: Number,
     default: 0,
   },
+  topics: [
+    {
+      title: {
+        type: String,
+        required: true,
+      },
+      isCompleted: {
+        type: Boolean,
+        default: false,
+      }
+    }
+  ]
 }, { timestamps: true });
 
 const Subject = mongoose.model('Subject', subjectSchema);
