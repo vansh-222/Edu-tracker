@@ -1,0 +1,174 @@
+
+
+.top-navbar {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.top-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.navbar-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin: 0;
+  color:white
+}
+
+.active-groups {
+   font-size: 14px;
+  color: white;
+  opacity: 0.9;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icon {
+  font-size: 20px;
+  background: white;
+  color: black;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-icon {
+  font-size: 28px;
+  background: white;
+  color: gray;
+  padding: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+
+.bottom-line {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.dropdown {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 14px;
+  color: #333;
+}
+
+
+
+.group-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.3); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+
+.group-popup-center {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 300px;
+  max-width: 90%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  animation: scaleIn 0.3s ease;
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.group-popup-center h3 {
+  margin-top: 0;
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+
+.group-input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #ccc;
+  color: black;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .top-navbar {
+    padding: 16px;
+  }
+
+  .navbar-title {
+    font-size: 20px;
+  }
+
+  .create-btn, .dropdown {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .group-popup-center {
+    width: 90%;
+    padding: 20px;
+  }
+}

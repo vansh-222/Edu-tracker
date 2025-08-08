@@ -1,0 +1,156 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  padding: 30px 20px;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.1);
+  border-radius: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.sidebar-title .edu {
+  color: #a748e2;
+}
+
+.sidebar-title .track {
+  color: #000;
+}
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar-item {
+  padding: 10px 15px;
+  margin-bottom: 14px;
+  border-radius: 10px;
+  border: 2px solid  #00AD6F ;
+  color: #333;
+  font-weight: 500;
+  transition: background 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.sidebar-item:hover {
+  background-color: #e8f5e9;
+  color: black;
+}
+
+.sidebar-item.active {
+  background: linear-gradient(to right, #00C181 , #00AD6F );
+  color: white;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  text-align: center;
+  padding: 15px;
+}
+
+.illustration-section {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.sidebar-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+
+.illustration-section p {
+  font-size: 14px;
+  color: #333;
+  margin: 30px auto 10px auto;
+}
+
+.upgrade-btn {
+  background:  linear-gradient(to right, #00C181 , #00AD6F );
+  color: white;
+  width: 200px;
+  height: 30px;
+  border: none;
+
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.upgrade-btn:hover {
+  background-color: #a1efd1;
+}
+
+/* By default sidebar is visible (desktop view) */
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  padding: 30px 20px;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.1);
+  border-radius: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hamburger hidden by default (desktop) */
+.hamburger {
+  display: none;
+}
+
+/* For smaller screens - max-width 768px */
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    margin: 0;
+    border-radius: 0;
+    box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1102;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 1200;
+    background: white;
+    padding: 2px 3px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .overlay {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1100;
+  }
+}
