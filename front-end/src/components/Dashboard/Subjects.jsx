@@ -99,14 +99,6 @@ function Subjects() {
             </div>
           </div>
 
-          <div className="subject-card yellow">
-            <p className="subject-number">03</p>
-            <h4>3D Design Foundations</h4>
-            <p className="subject-progress">13 lessons | 21%</p>
-            <div className="progress-bar">
-              <div style={{ width: "21%" }} />
-            </div>
-          </div>
 
           {/* Dynamic Subjects */}
           {subjects.map((subject, idx) => {
@@ -146,3 +138,5 @@ function Subjects() {
 }
 
 export default Subjects;
+
+
