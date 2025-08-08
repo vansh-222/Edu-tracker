@@ -1,15 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-const API = axios.create({
-  baseURL: "http://localhost:5000/api",
-});
-
-export const getSubjects = () => API.get("/subjects");
-export const createSubject = (newSubject) => API.post("/subjects", newSubject);
-export const updateSubject = (id, updated) => API.put(`/subjects/${id}`, updated);
-export const deleteSubject = (id) => API.delete(`/subjects/${id}`);
-
 
 function Subjects() {
   const [name, setName] = useState("");
@@ -108,14 +99,6 @@ function Subjects() {
             </div>
           </div>
 
-          <div className="subject-card yellow">
-            <p className="subject-number">03</p>
-            <h4>3D Design Foundations</h4>
-            <p className="subject-progress">13 lessons | 21%</p>
-            <div className="progress-bar">
-              <div style={{ width: "21%" }} />
-            </div>
-          </div>
 
           {/* Dynamic Subjects */}
           {subjects.map((subject, idx) => {
@@ -155,3 +138,5 @@ function Subjects() {
 }
 
 export default Subjects;
+
+

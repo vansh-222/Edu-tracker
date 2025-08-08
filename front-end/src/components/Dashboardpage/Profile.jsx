@@ -5,7 +5,7 @@ export default function Profile() {
     <div className="profile-container">
       <div className="profile-header">
         <h3>My Profile</h3>
-        <p>79% Yours, Progress</p></div>
+        <p>78% Yours, Progress</p></div>
       <div className="profile-avatar">
         <img src="photo.png" alt="Avatar" />
          <h3>Vansh kumar</h3>
