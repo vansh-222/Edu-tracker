@@ -21,6 +21,8 @@ const memberRoutes = require("./routes/joinedGroup/memberRoutes");
 const activityChartRoutes = require("./routes/joinedGroup/ActivityChart");
 const resourceRoutes = require("./routes/joinedGroup/resourceRoutes");
 const subjectRoutes = require("./routes/subjectRoutes"); // ✅ Subject Route
+const groupRoutes = require('./routes/groupsRoutes'); 
+
 
 // -----------------------
 // Routes Middleware
@@ -31,6 +33,7 @@ app.use("/api/members", memberRoutes);
 app.use("/api/resources", resourceRoutes);
 app.use("/api/activity", activityChartRoutes);
 app.use("/api/subjects", subjectRoutes); // ✅ Subject Controller Connected
+app.use('/api/groups', groupRoutes);
 
 // -----------------------
 // MongoDB Connection
