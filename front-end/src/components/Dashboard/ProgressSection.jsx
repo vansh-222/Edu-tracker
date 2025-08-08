@@ -87,28 +87,6 @@ const ProgressSection = () => {
             )}
           </div>
 
-          {/* Info Cards */}
-          <div className="info-cards">
-            <div className="info-card card">
-              <div className="icon-wrapper purple">
-                <i className="user-icon" />
-              </div>
-              <div>
-                <p className="info-title">Tests</p>
-                <p className="info-value">6</p>
-              </div>
-            </div>
-
-            <div className="info-card card">
-              <div className="icon-wrapper orange">
-                <i className="grid-icon" />
-              </div>
-              <div>
-                <p className="info-title">Records</p>
-                <p className="info-value">3/0</p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
