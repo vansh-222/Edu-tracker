@@ -1,6 +1,5 @@
 import React from "react";
 
-import { Link } from "react-router-dom";
 function Sidebar() {
   return (
     <div className="sidebar">
@@ -9,15 +8,9 @@ function Sidebar() {
       </div>
       <nav className="nav">
         <button className="nav-button active">Dashboard</button>
-        <button className="nav-button"><Link to="/subject">
-            Subject
-          </Link></button>
-        <button className="nav-button"><Link to="/GroupsPage" >
-            My Groups
-          </Link></button>
-        <button className="nav-button"><Link to="/joined" >
-            My Joined Group
-          </Link></button>
+        <button className="nav-button">Subjects</button>
+        <button className="nav-button">My Groups</button>
+        <button className="nav-button">My Activities</button>
         <button className="nav-button">Settings</button>
       </nav>
       <div className="logout-button" title="Logout">
